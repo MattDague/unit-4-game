@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="assets/javascript/game.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -33,7 +33,7 @@
         <div id="winsandlosses">
             <p id="wins">Wins: </p>
             <br />
-            <p id="Losses">Losses: </p>
+            <p id="losses">Losses: </p>
         </div>
         <div class="clear"></div>
     </div>
@@ -48,12 +48,13 @@
         <img src="assets/images/yellow.jpg" id="yellow" alt="The Yellow Crystal" />
         <img src="assets/images/green.jpg" id="green" alt="The Green Crystal" />
     </div>
-    <div id="score" class="content">
-        <p>Your total score is:</p>
+    <div id="playerscore" class="content">
+        <p>Your current score is:</p>
         <hr />
-        <p>0</p>
+        <div id="score">0</div>
 
     </div>
+    <script src="assets/javascript/game.js"></script>
 </main>
 </body>
 
