@@ -1,0 +1,58 @@
+body {
+    background-image: url("../images/what-the-hex.png");
+    margin: auto;
+}
+
+.content {
+    margin-bottom: 20px;
+    
+}
+
+#goal {
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    float: left;
+    margin-left: 250px;
+}
+
+#winsandlosses {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin-left: 30px;
+    background-color: lightcoral;
+    margin-right: 250px;
+    
+}
+main {
+   width: 960px;
+   margin: auto;
+   font-size: 22px;
+   
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+ 
+#crystals {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+   
+}
+
+#score {
+   
+    background-color: aquamarine;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 560px;
+   
+}
