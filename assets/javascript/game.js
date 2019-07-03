@@ -46,6 +46,7 @@ function gameStart() {
     function addRed() {
         userNum = (userNum + redNum);
         $("#score").html(userNum);
+        testWin();
         console.log(userNum);
         console.log(targetNum);
     }
@@ -53,6 +54,7 @@ function gameStart() {
     function addBlue() {
         userNum = (userNum + blueNum);
         $("#score").html(userNum);
+        testWin();
         console.log(userNum);
         console.log(targetNum);
     }
@@ -60,6 +62,7 @@ function gameStart() {
     function addYellow() {
         userNum = (userNum + yellowNum);
         $("#score").html(userNum);
+        testWin();
         console.log(userNum);
         console.log(targetNum);
     }
@@ -67,52 +70,49 @@ function gameStart() {
     function addGreen() {
         userNum = (userNum + greenNum);
         $("#score").html(userNum);
+        testWin();
         console.log(userNum);
         console.log(targetNum);
-        
+
     }
 
-    if (userNum === targetNum) {
-        winGame()
+    //function to add to win column and restart game
+
+    function testWin() {
+        if (userNum === targetNum) {
+            winGame()
+        }
+
+        else if (userNum > targetNum) {
+            loseGame()
+        }
     }
 
-    else if (userNum > targetNum) {
-        loseGame()
-    }
-
-//function to add to win column and restart game
-    function winGame() {
-        winTotal++;
-        $("#wins").html("Wins: " + winTotal);
-        gameStart()
-       
-    }
-// function to add to loss column and restart game
-    function loseGame() {
-        lossTotal++;
-        $("#losses").html("Losses: " + lossTotal);
-        gameStart();
-    }
-
-
-   
 }
 
 gameStart();
 
 
-// function winGame(){
-//  winTotal++;
-//  $("#wins").html("Wins: " + winTotal);
-// gameStart() 
-// // return winTotal;
+// function testWin () {
+// if (userNum === targetNum) {
+//     winGame()
 // }
 
-// function loseGame() {
-//     lossTotal++;
-//     $("#losses").html("Losses: " + lossTotal);
-//     // return lossTotal;
-//     gameStart();
+// else if (userNum > targetNum) {
+//     loseGame()
+// }
 // }
 
+function winGame() {
+    winTotal++;
+    $("#wins").html("Wins: " + winTotal);
+    gameStart();
+
+}
+// function to add to loss column and restart game
+function loseGame() {
+    lossTotal++;
+    $("#losses").html("Losses: " + lossTotal);
+    gameStart();
+}
 
